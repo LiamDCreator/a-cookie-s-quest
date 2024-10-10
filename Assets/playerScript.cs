@@ -17,7 +17,7 @@ public class playerScript : MonoBehaviour
     {
            transform.Translate(upOrDown * movespeed * Time.deltaTime);
 
-           if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
+        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
             upOrDown = Vector3.down;
            }
 
