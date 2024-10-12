@@ -25,4 +25,8 @@ public class playerScript : MonoBehaviour
             upOrDown = Vector3.up;
            }
     }
+    void OnCollisionEnter2D(Collision2D collision){
+
+        Destroy(gameObject);
+    }
 }
