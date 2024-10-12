@@ -7,10 +7,7 @@ public class playerScript : MonoBehaviour
     public float movespeed;
     public Vector3 upOrDown = Vector3.up;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -24,6 +21,16 @@ public class playerScript : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)){
             upOrDown = Vector3.up;
            }
+        
+        
+        if(Input.GetKeyDown(KeyCode.Space)){
+            if(upOrDown == Vector3.down){
+                upOrDown = Vector3.up;
+            } else if(upOrDown == Vector3.up){
+                upOrDown = Vector3.down;
+            }
+           }
+           
     }
     void OnCollisionEnter2D(Collision2D collision){
 
