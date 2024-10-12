@@ -861,6 +861,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4300238286730930610, guid: f1be8fef117f7d045ab39ade83187865, type: 3}
+      propertyPath: m_Name
+      value: bottomWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185496554150618804, guid: f1be8fef117f7d045ab39ade83187865, type: 3}
+      propertyPath: m_Name
+      value: topWall
+      objectReference: {fileID: 0}
     - target: {fileID: 5939453991986526543, guid: f1be8fef117f7d045ab39ade83187865, type: 3}
       propertyPath: m_Name
       value: wall
