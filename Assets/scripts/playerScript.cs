@@ -31,6 +31,11 @@ public class playerScript : MonoBehaviour
             }
            }
            
+              if (transform.position.y > 5 || transform.position.y < -5){
+
+        Destroy(gameObject);
+                
+              }
     }
     void OnCollisionEnter2D(Collision2D collision){
 
