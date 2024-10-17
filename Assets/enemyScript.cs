@@ -21,6 +21,10 @@ public class enemyScript : MonoBehaviour
     transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
 
     // Move towards the player, but not affecting the leftward movement
-    Vector3 targetPosition = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-    transform.position = new Vector3(transform.position.x, targetPosition.y, targetPosition.z);
+    if (player != null)
+    {
+        // Move towards the player, but not affecting the leftward movement
+        Vector3 targetPosition = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, targetPosition.y, targetPosition.z);
+    }
 }}
