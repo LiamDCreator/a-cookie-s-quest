@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  speed: 1
+  speed: 3
   player: {fileID: 0}
 --- !u!61 &1297765548985805078
 BoxCollider2D:

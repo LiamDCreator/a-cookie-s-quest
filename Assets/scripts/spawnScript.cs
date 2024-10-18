@@ -27,10 +27,24 @@ public class spawnScript : MonoBehaviour
             timer = 0;
         }
     }
-    void spawnObject(){
+    void spawnObject()
+    {
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
 
-    Instantiate(wall, new Vector3(transform.position.x,Random.Range(lowestPoint,highestPoint), 0), transform.rotation);
+       
+        int randomIndex = Random.Range(0, 11); 
+        GameObject objectToSpawn;
+
+        if (randomIndex <= 5) {
+            objectToSpawn = wall;
+        } else if (randomIndex == 6 ||randomIndex == 7) {
+            objectToSpawn = fatPerson;
+        } else {
+            objectToSpawn = walkingPerson;
+        }
+
+        // Instantiate the chosen object at a random y position within the height offset
+        Instantiate(objectToSpawn, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
     }
 }
