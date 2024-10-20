@@ -122,85 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &66480917
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 66480918}
-  - component: {fileID: 66480920}
-  - component: {fileID: 66480919}
-  m_Layer: 5
-  m_Name: highScoreText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &66480918
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66480917}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 560286295}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188.55774, y: 48.82337}
-  m_SizeDelta: {x: 329.1154, y: 78.7052}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &66480919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66480917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'high Score:'
---- !u!222 &66480920
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66480917}
-  m_CullTransparentMesh: 1
 --- !u!1 &98036624
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &560286292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +458,6 @@ RectTransform:
   - {fileID: 1310754763}
   - {fileID: 1963073259}
   - {fileID: 696311884}
-  - {fileID: 66480918}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -579,8 +499,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127.35, y: 44.088}
-  m_SizeDelta: {x: 254.7046, y: 88.1757}
+  m_AnchoredPosition: {x: -70.67535, y: 44.088}
+  m_SizeDelta: {x: 368.0539, y: 88.1757}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696311885
 MonoBehaviour:
@@ -615,7 +535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'score:'
+  m_Text: 
 --- !u!222 &696311886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -635,9 +555,9 @@ GameObject:
   - component: {fileID: 938700882}
   - component: {fileID: 938700881}
   - component: {fileID: 938700880}
-  - component: {fileID: 938700885}
   - component: {fileID: 938700884}
   - component: {fileID: 938700883}
+  - component: {fileID: 938700885}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -658,6 +578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 4
+  gameOverScreenScript: {fileID: 1515508643}
+  gameOverScreen: {fileID: 560286294}
   upOrDown: {x: 0, y: 1, z: 0}
 --- !u!212 &938700881
 SpriteRenderer:
@@ -1406,6 +1328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6835e285ced42b2439de4229bdf7a575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartGameButton: {fileID: 1310754764}
+  scoreText: {fileID: 696311885}
+  currentScoreRef: 0
 --- !u!1 &1729445402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,6 +1729,6 @@ SceneRoots:
   - {fileID: 1729445403}
   - {fileID: 1815690401}
   - {fileID: 499873774}
-  - {fileID: 1180206191}
   - {fileID: 1515508642}
+  - {fileID: 1180206191}
   - {fileID: 560286295}
