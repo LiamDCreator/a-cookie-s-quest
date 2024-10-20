@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class playerScript : MonoBehaviour
 {
     public float movespeed;
+    public gameOverScreenScript gameOverScreenScript;
     public Canvas gameOverScreen;
     public Vector3 upOrDown = Vector3.up;
     // Start is called before the first frame update
@@ -36,14 +37,18 @@ public class playerScript : MonoBehaviour
               if (transform.position.y > 5 || transform.position.y < -5){
 
         Destroy(gameObject);
-         gameOverScreen.gameObject.SetActive(true);
+         gameOver();
                 
               }
     }
     void OnCollisionEnter2D(Collision2D collision){
 
         Destroy(gameObject);
-         gameOverScreen.gameObject.SetActive(true);
-
+        
+        gameOver();
+    }
+    void gameOver(){
+        gameOverScreen.gameObject.SetActive(true);
+         gameOverScreenScript.DisplayCurrentScore();
     }
 }
