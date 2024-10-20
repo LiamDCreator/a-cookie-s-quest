@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class playerScore : MonoBehaviour
 {  
     public Text playerScoreNow;
-    public int currentScore;
+    public int currentScore = 0;
     // Start is called before the first frame update
-   void start(){
+   void Start(){
     playerScoreNow.text = currentScore.ToString();
   }
 
