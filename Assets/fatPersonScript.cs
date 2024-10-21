@@ -33,5 +33,8 @@ public class fatPersonScript : MonoBehaviour
             Vector3 targetPosition = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
             transform.position = new Vector3(transform.position.x, targetPosition.y, targetPosition.z);
         }
+        if(transform.position.x < -15){
+            Destroy(gameObject);
+        }
     }
 }

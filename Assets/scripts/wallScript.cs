@@ -15,6 +15,10 @@ public class wallScript : MonoBehaviour
     {
         
           transform.Translate(Vector3.left * movespeed * Time.deltaTime);
+
+           if(transform.position.x < -15){
+            Destroy(gameObject);
+        }
     }
  
 }
