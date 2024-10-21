@@ -8,24 +8,19 @@ public class spawnScript : MonoBehaviour
     public GameObject fatPerson;
     public GameObject walkingPerson;
     public float spawnRate = 3;
-    private float timer = 0;
+    private float timer = 3;
     public float heightOffset = 4;
-    // Start is called before the first frame update
-    void Start()
-    {
-        spawnObject();
-    }
-
-    // Update is called once per frame
+    public bool hasGameStarted = false;
+    
     void Update()
-    {
+    {if(hasGameStarted == true){
         if(timer < spawnRate){
 
             timer = timer + Time.deltaTime;
         } else {
            spawnObject();
             timer = 0;
-        }
+        }}
     }
     void spawnObject()
     {
