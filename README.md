@@ -9,5 +9,7 @@ To change direction, simply press the spacebar or use the W and S keys. For ever
 ## tools I used
  **Unity**: Used as the game engine for development.  
  **c#**: programming language.  
- **chatGpt**: used for solving coding issues and random questions relating to the project.
+ **milanote**: used for creating a game design document, this includes a to do list and paper prototype.  
+ **chatGpt**: used for solving coding issues and random questions relating to the project.  
+  **paint**: used for creating the paper prototype
  
