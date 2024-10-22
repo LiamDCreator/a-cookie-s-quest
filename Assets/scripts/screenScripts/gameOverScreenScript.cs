@@ -8,7 +8,7 @@ public class gameOverScreenScript : MonoBehaviour
 {
      public Button restartGameButton;
     public Text scoreText; // Add a Text reference to display the score
-    public text highScoreText;
+    public Text highScoreText;
     private playerScore playerScoreScript; // Reference to playerScore script
     public int currentScoreRef;
     public int highScore;
