@@ -11,7 +11,7 @@ public class playerScore : MonoBehaviour
  
     private void OnTriggerEnter2D(Collider2D collision){
         currentScore++;
-       
+         playerScoreNow.text = currentScore.ToString();
        
     }
 }
