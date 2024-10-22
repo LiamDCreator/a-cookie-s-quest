@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class gameOverScreenScript : MonoBehaviour
 {
-     public Button restartGameButton;
-    public Text scoreText; // Add a Text reference to display the score
-    public Text highScoreText;
     private playerScore playerScoreScript; // Reference to playerScore script
+
+    public Button restartGameButton;
+    public Text scoreText; // Reference to display the score
+    public Text highScoreText;
     public int currentScoreRef;
     public int highScore;
 
@@ -20,13 +21,15 @@ public class gameOverScreenScript : MonoBehaviour
 
         // Find the playerScore script in the scene
         playerScoreScript = FindObjectOfType<playerScore>();
-        
-        // Display the current score when the game over screen is shown
-       
+
+        // Display the current and high scores when the game over screen is shown
+        DisplayCurrentScore();
+        DisplayHighScore();
     }
-    void Update(){
-       currentScoreRef = playerScoreScript.currentScore;
-       
+
+    void Update()
+    {
+        currentScoreRef = playerScoreScript.currentScore;
     }
 
     public void DisplayCurrentScore()
@@ -35,6 +38,23 @@ public class gameOverScreenScript : MonoBehaviour
         {
             scoreText.text = "Score: " + currentScoreRef.ToString();
         }
+    }
+
+    public void DisplayHighScore()
+    {
+        // Get the high score from PlayerPrefs, defaulting to 0 if it doesn't exist
+        highScore = PlayerPrefs.GetInt("highscore", 0);
+
+        // If the current score is higher than the high score, update it
+        if (currentScoreRef > highScore)
+        {
+            highScore = currentScoreRef;
+            PlayerPrefs.SetInt("highscore", highScore);
+            PlayerPrefs.Save(); // Save the updated high score immediately
+        }
+
+        // Display the high score
+        highScoreText.text = "Highscore: " + highScore.ToString();
     }
 
     void restartGame()
