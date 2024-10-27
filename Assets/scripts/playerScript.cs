@@ -7,6 +7,7 @@ public class playerScript : MonoBehaviour
 {
     public float movespeed;
     public AudioSource playerDiesSound;
+    public AudioSource changeDirectionSound;
     public gameOverScreenScript gameOverScreenScript;
     public Canvas gameOverScreen;
     public Vector3 upOrDown = Vector3.up;
@@ -20,18 +21,25 @@ public class playerScript : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
             upOrDown = Vector3.down;
+                changeDirectionSound.Play();
+
            }
 
             if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)){
             upOrDown = Vector3.up;
+                changeDirectionSound.Play();
+
            }
         
         
         if(Input.GetKeyDown(KeyCode.Space)){
             if(upOrDown == Vector3.down){
                 upOrDown = Vector3.up;
+                changeDirectionSound.Play();
             } else if(upOrDown == Vector3.up){
                 upOrDown = Vector3.down;
+                changeDirectionSound.Play();
+
             }
            }
            
