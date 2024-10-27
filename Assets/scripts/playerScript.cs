@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class playerScript : MonoBehaviour
 {
     public float movespeed;
+    public AudioSource playerDiesSound;
     public gameOverScreenScript gameOverScreenScript;
     public Canvas gameOverScreen;
     public Vector3 upOrDown = Vector3.up;
@@ -42,7 +43,7 @@ public class playerScript : MonoBehaviour
               }
     }
     void OnCollisionEnter2D(Collision2D collision){
-
+        playerDiesSound.Play();
         Destroy(gameObject);
         
         gameOver();
