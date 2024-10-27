@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class playerScript : MonoBehaviour
 {
     public float movespeed;
+    private bool movingUP = true;
     public AudioSource playerDiesSound;
     public AudioSource changeDirectionSound;
     public gameOverScreenScript gameOverScreenScript;
@@ -21,25 +22,30 @@ public class playerScript : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
             upOrDown = Vector3.down;
-                changeDirectionSound.Play();
+            if(movingUP == false){
+                changeDirectionSound.Play();}
+                movingUP = true;
 
            }
 
             if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)){
             upOrDown = Vector3.up;
+            if(movingUP == true){
                 changeDirectionSound.Play();
-
+            }
+            movingUP = false;
            }
         
         
         if(Input.GetKeyDown(KeyCode.Space)){
             if(upOrDown == Vector3.down){
                 upOrDown = Vector3.up;
+                movingUP = false;
                 changeDirectionSound.Play();
             } else if(upOrDown == Vector3.up){
                 upOrDown = Vector3.down;
                 changeDirectionSound.Play();
-
+        movingUP = true;
             }
            }
            
