@@ -8,6 +8,8 @@ public class startScreenScript : MonoBehaviour
     private spawnScript spawnScript;
     private playerScript playerScript;
     public Canvas startScreen;
+    public AudioSource startGameSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class startScreenScript : MonoBehaviour
          startScreen.gameObject.SetActive(false);
         playerScript.movespeed = 4;
         spawnScript.hasGameStarted = true;
+
            }
     }
 }
