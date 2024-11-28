@@ -7,7 +7,7 @@ public class spawnScript : MonoBehaviour
     public GameObject wall;
     public GameObject fatPerson;
     public GameObject walkingPerson;
-    public float spawnRate = 3;
+    public float spawnRate = 1;
     private float timer = 3;
     public float heightOffset = 4;
     public bool hasGameStarted = false;
