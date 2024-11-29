@@ -5474,7 +5474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 704501710}
-  scrollSpeedX: 2
+  scrollSpeedX: 1
   scrollSpeedY: 0
   resetDistanceX: 23
   resetDistanceY: 0

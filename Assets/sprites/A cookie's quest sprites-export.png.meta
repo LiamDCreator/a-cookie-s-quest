@@ -121,8 +121,8 @@ TextureImporter:
       name: A cookie's quest sprites-export_1
       rect:
         serializedVersion: 2
-        x: 828
-        y: 1968
+        x: 818
+        y: 1993
         width: 114
         height: 234
       alignment: 0
@@ -206,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 808
-        y: 1678
+        y: 1693
         width: 114
         height: 234
       alignment: 0
@@ -226,10 +226,10 @@ TextureImporter:
       name: A cookie's quest sprites-export_6
       rect:
         serializedVersion: 2
-        x: 1653
-        y: 48
-        width: 69
-        height: 9
+        x: 1173
+        y: 1603
+        width: 144
+        height: 264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,48 +239,6 @@ TextureImporter:
       bones: []
       spriteID: 1106f90ed602b4a4681bfab9609c4518
       internalID: 143314808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: A cookie's quest sprites-export_7
-      rect:
-        serializedVersion: 2
-        x: 1738
-        y: 48
-        width: 154
-        height: 169
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78208cf730c0bf34aa3025066abeb0ea
-      internalID: 779415052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: A cookie's quest sprites-export_8
-      rect:
-        serializedVersion: 2
-        x: 1898
-        y: 43
-        width: 124
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83cb93663115c24458a5a6fb037bc416
-      internalID: -460015886
       vertices: []
       indices: 
       edges: []
@@ -303,8 +261,6 @@ TextureImporter:
       A cookie's quest sprites-export_4: 511972846
       A cookie's quest sprites-export_5: 2092785166
       A cookie's quest sprites-export_6: 143314808
-      A cookie's quest sprites-export_7: 779415052
-      A cookie's quest sprites-export_8: -460015886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

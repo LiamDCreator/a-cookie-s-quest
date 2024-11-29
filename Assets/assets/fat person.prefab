@@ -175,6 +175,10 @@ MonoBehaviour:
   moveSpeed: 2
   speed: 1
   player: {fileID: 0}
+  SpritePic:
+  - {fileID: -877884407, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
+  - {fileID: 1101141609, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
+  - {fileID: 143314808, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
 --- !u!61 &4078672321314508030
 BoxCollider2D:
   m_ObjectHideFlags: 0
