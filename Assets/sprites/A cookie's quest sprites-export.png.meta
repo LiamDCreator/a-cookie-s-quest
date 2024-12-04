@@ -243,6 +243,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_7
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1263
+        width: 564
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddf91969bf18554cb4ea816cd842e0e
+      internalID: -1971203902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -261,6 +282,7 @@ TextureImporter:
       A cookie's quest sprites-export_4: 511972846
       A cookie's quest sprites-export_5: 2092785166
       A cookie's quest sprites-export_6: 143314808
+      A cookie's quest sprites-export_7: -1971203902
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
