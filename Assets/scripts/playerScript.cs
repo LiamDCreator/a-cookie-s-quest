@@ -12,6 +12,9 @@ public class playerScript : MonoBehaviour
     public gameOverScreenScript gameOverScreenScript;
     public Canvas gameOverScreen;
     public Vector3 upOrDown = Vector3.up;
+     public ParticleSystem playerParticles;
+     public Transform particle;
+       
     // Start is called before the first frame update
    
 
@@ -50,6 +53,7 @@ public class playerScript : MonoBehaviour
            }
            
               if (transform.position.y > 5 || transform.position.y < -5){
+         playParticles();
 
         Destroy(gameObject);
          gameOver();
@@ -58,13 +62,19 @@ public class playerScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision){
         playerDiesSound.Play();
+
+    playParticles();
         Destroy(gameObject);
         
         gameOver();
-    }
+    } 
     void gameOver(){
         gameOverScreen.gameObject.SetActive(true);
          gameOverScreenScript.DisplayCurrentScore();
          gameOverScreenScript.DisplayHighScore();
+    }
+    void playParticles(){
+        playerParticles.Play();
+        particle.transform.position = transform.position;
     }
 }
