@@ -105,7 +105,7 @@ TextureImporter:
         width: 114
         height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
         width: 114
         height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 144
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
         width: 144
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
         width: 154
         height: 2494
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 114
         height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 144
         height: 264
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 564
         height: 259
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: A cookie's quest sprites-export_8
       rect:
         serializedVersion: 2
-        x: 158
-        y: 958
-        width: 1449
-        height: 244
+        x: 892
+        y: 1473
+        width: 151
+        height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,7 +286,49 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: A cookie's quest sprites-export_9
+      name: A cookie's quest sprites-export_10
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 1352
+        width: 151
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c24ec26f12b9e44482fc29ce8a01d7d
+      internalID: -1859581685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_14
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 958
+        width: 1449
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d10cff7082e834782ce4ada868c602
+      internalID: 756650405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_15
       rect:
         serializedVersion: 2
         x: 158
@@ -294,14 +336,539 @@ TextureImporter:
         width: 744
         height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0586d1511b1a98d49b08ac73818e446e
-      internalID: -735405796
+      spriteID: 8722f6d3f5b13c842a2ec27e9c3420f7
+      internalID: -382978516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_16
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 398
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0adbebc83c4df43ad1c9148c71b4b6
+      internalID: 761459605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 468
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa92e1e62af00b478a5ee8338eaa60b
+      internalID: -1071515801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_18
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 398
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7166f4e193e1349a7c4d49e809c8d8
+      internalID: -601901088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_19
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 398
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529016cfba36f344497a6f6a24539a72
+      internalID: -1024312932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_20
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 398
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7805c7790c934b347b9de7ee11015c7b
+      internalID: -374639399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 398
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358ea1f7cb841d14191a5adde33fe8d9
+      internalID: -2023942600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_22
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 398
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ecae411186b6b4cbde88659269f817
+      internalID: -220559181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_23
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 398
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca789eb1f1bac814bb120fc8a0c81fa5
+      internalID: -2014971066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_24
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 398
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152fe1d1765a6b14dad45ee7a1a48dcb
+      internalID: -475272695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_25
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 398
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f0c3618c2a04f4181aa6ce7cecff57
+      internalID: 180942471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_26
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 238
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c142b1a60f3647147b8c4173809f8dfe
+      internalID: 1365370647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_27
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 238
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94f821f7305ded4aa8371941a72f7d9
+      internalID: 765155853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_28
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 238
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4874a4f1ea8e9442bcb713143b91518
+      internalID: 782103974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_29
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 238
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b772c69defcb5c74891e8f1e4489987c
+      internalID: 1013608341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_30
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 238
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e79e5d0ab90dc47b1952a34379c82a
+      internalID: -1975970899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 78
+        width: 34
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de52c268c9c3714fb4dc9effb4d577d
+      internalID: -608299740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_32
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 78
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a91c8f7d1bb37345b5dde5c9276ea6b
+      internalID: -1299966551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_33
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 78
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d96c38769aa4074f87b4d4abcfc4357
+      internalID: 1933912341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_34
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 78
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9796cc21d3b072848ad9ee576cd584fe
+      internalID: -1285497322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_35
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 78
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ef99d302a9639459e8a3f4e1fd9549
+      internalID: 1516714411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_36
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 78
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5f5a7be6ba33644a5db1642ba202a9
+      internalID: 543075779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_37
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 78
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c491e5348e418624597ae1c16db909c1
+      internalID: 135217963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_38
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 78
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0229bf7bf97232249b519f8f1eecca00
+      internalID: 1490577763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_39
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 78
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5379705ded3554c941cbf9f3aad290
+      internalID: 1248317932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_40
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 78
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118a61873c76a894eaa6cd42e0ef720a
+      internalID: -1384280442
       vertices: []
       indices: 
       edges: []
@@ -319,9 +886,40 @@ TextureImporter:
     nameFileIdTable:
       A cookie's quest sprites-export_0: 563034412
       A cookie's quest sprites-export_1: -83017577
+      A cookie's quest sprites-export_10: -1859581685
+      A cookie's quest sprites-export_11: -1495932013
+      A cookie's quest sprites-export_12: -448209228
+      A cookie's quest sprites-export_13: 1039369663
+      A cookie's quest sprites-export_14: 756650405
+      A cookie's quest sprites-export_15: -382978516
+      A cookie's quest sprites-export_16: 761459605
+      A cookie's quest sprites-export_17: -1071515801
+      A cookie's quest sprites-export_18: -601901088
+      A cookie's quest sprites-export_19: -1024312932
       A cookie's quest sprites-export_2: -877884407
+      A cookie's quest sprites-export_20: -374639399
+      A cookie's quest sprites-export_21: -2023942600
+      A cookie's quest sprites-export_22: -220559181
+      A cookie's quest sprites-export_23: -2014971066
+      A cookie's quest sprites-export_24: -475272695
+      A cookie's quest sprites-export_25: 180942471
+      A cookie's quest sprites-export_26: 1365370647
+      A cookie's quest sprites-export_27: 765155853
+      A cookie's quest sprites-export_28: 782103974
+      A cookie's quest sprites-export_29: 1013608341
       A cookie's quest sprites-export_3: 1101141609
+      A cookie's quest sprites-export_30: -1975970899
+      A cookie's quest sprites-export_31: -608299740
+      A cookie's quest sprites-export_32: -1299966551
+      A cookie's quest sprites-export_33: 1933912341
+      A cookie's quest sprites-export_34: -1285497322
+      A cookie's quest sprites-export_35: 1516714411
+      A cookie's quest sprites-export_36: 543075779
+      A cookie's quest sprites-export_37: 135217963
+      A cookie's quest sprites-export_38: 1490577763
+      A cookie's quest sprites-export_39: 1248317932
       A cookie's quest sprites-export_4: 511972846
+      A cookie's quest sprites-export_40: -1384280442
       A cookie's quest sprites-export_5: 2092785166
       A cookie's quest sprites-export_6: 143314808
       A cookie's quest sprites-export_7: -1971203902
