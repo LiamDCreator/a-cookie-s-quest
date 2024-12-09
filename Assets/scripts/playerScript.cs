@@ -8,6 +8,9 @@ public class playerScript : MonoBehaviour
     public float movespeed;
     private bool movingUP = true;
     public AudioSource playerDiesSound;
+    public AudioSource playerDiesWallSound;
+    public AudioSource playerDiesWaterSound;
+
     public AudioSource changeDirectionSound;
     public gameOverScreenScript gameOverScreenScript;
     public Canvas gameOverScreen;
@@ -54,14 +57,24 @@ public class playerScript : MonoBehaviour
            
               if (transform.position.y > 5 || transform.position.y < -5){
          playParticles();
-
+        playerDiesWaterSound.Play();
         Destroy(gameObject);
          gameOver();
                 
               }
     }
     void OnCollisionEnter2D(Collision2D collision){
+
+       if (collision.gameObject.CompareTag("wall"))
+    {
+        // Play the sound for hitting a wall
+        playerDiesWallSound.Play();
+    }
+    else
+    {
+        // Play the sound for player death
         playerDiesSound.Play();
+    }
 
     playParticles();
         Destroy(gameObject);
