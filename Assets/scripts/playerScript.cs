@@ -29,6 +29,7 @@ public class playerScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
             upOrDown = Vector3.down;
             if(movingUP == false){
+                changeDirectionSound.volume = UnityEngine.Random.Range(0.8f,1f);
                 changeDirectionSound.Play();}
                 movingUP = true;
 
@@ -37,6 +38,8 @@ public class playerScript : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)){
             upOrDown = Vector3.up;
             if(movingUP == true){
+                changeDirectionSound.volume = UnityEngine.Random.Range(0.8f,1f);
+
                 changeDirectionSound.Play();
             }
             movingUP = false;
@@ -47,9 +50,13 @@ public class playerScript : MonoBehaviour
             if(upOrDown == Vector3.down){
                 upOrDown = Vector3.up;
                 movingUP = false;
+                changeDirectionSound.volume = UnityEngine.Random.Range(0.8f,1f);
+
                 changeDirectionSound.Play();
             } else if(upOrDown == Vector3.up){
                 upOrDown = Vector3.down;
+                changeDirectionSound.volume = UnityEngine.Random.Range(0.8f,1f);
+
                 changeDirectionSound.Play();
         movingUP = true;
             }

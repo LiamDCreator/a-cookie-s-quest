@@ -14,6 +14,8 @@ public class playerScore : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         currentScore++;
          playerScoreNow.text = currentScore.ToString();
+                playerPointSound.volume = UnityEngine.Random.Range(0.8f,1f);
+
        playerPointSound.Play();
     }
 }
