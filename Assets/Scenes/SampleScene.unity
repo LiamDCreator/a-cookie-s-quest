@@ -268,8 +268,8 @@ MonoBehaviour:
   playerDiesSoundeffect: {fileID: 111426265}
   pointSoundEffectt: {fileID: 938700886}
   changeDirectionSoundeffect: {fileID: 938700887}
-  muteSprite: {fileID: 1039369663, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
-  unmuteSprite: {fileID: -1859581685, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
+  muteSprite: {fileID: -1859581685, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
+  unmuteSprite: {fileID: 1039369663, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
   buttonImage: {fileID: 1593371068}
 --- !u!82 &111426268
 AudioSource:
