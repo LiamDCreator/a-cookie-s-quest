@@ -37,5 +37,11 @@ public class cookieAnimatie : MonoBehaviour
         bottonTapSign.SetActive(false);
 
         }
+          if(Input.GetKeyDown(KeyCode.Space)){
+         tapSign.SetActive(false);
+        bottonTapSign.SetActive(false);
+        gameObject.SetActive(false);
+
     }
+}
 }
