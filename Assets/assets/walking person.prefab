@@ -106,7 +106,7 @@ MonoBehaviour:
   SpritePic:
   - {fileID: -83017577, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
   - {fileID: 563034412, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
-  - {fileID: 2092785166, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
+  - {fileID: 143314808, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
 --- !u!61 &1297765548985805078
 BoxCollider2D:
   m_ObjectHideFlags: 0
