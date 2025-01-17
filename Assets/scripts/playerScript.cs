@@ -46,7 +46,7 @@ public class playerScript : MonoBehaviour
            }
         
         
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) || IsScreenTapped()){
             if(upOrDown == Vector3.down){
                 upOrDown = Vector3.up;
                 movingUP = false;
@@ -97,4 +97,17 @@ public class playerScript : MonoBehaviour
         playerParticles.Play();
         particle.transform.position = transform.position;
     }
+    private bool IsScreenTapped()
+{
+    // Check if there's at least one touch and if it began this frame
+    if (Input.touchCount > 0)
+    {
+        Touch touch = Input.GetTouch(0);
+        if (touch.phase == TouchPhase.Began)
+        {
+            return true;
+        }
+    }
+    return false;
+}
 }
