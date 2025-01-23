@@ -957,6 +957,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: A cookie's quest sprites-export_9
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 179
+        width: 203
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156358baf32f7a64899aec7dcd8ef392
+      internalID: -735405796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

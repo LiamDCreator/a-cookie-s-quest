@@ -8,6 +8,8 @@ public class soundEffectsMuteScript : MonoBehaviour
     // Start is called before the first frame update
 
       public AudioSource playerDiesSoundeffect;
+      public AudioSource playerDiesWallSoundeffect;
+      public AudioSource playerDiesWaterSoundeffect;
     public AudioSource pointSoundEffectt;
     public AudioSource changeDirectionSoundeffect;
 
@@ -46,6 +48,9 @@ public class soundEffectsMuteScript : MonoBehaviour
     {
         // Set the mute state for all sound effects
         playerDiesSoundeffect.mute = isMuted;
+        playerDiesWaterSoundeffect.mute = isMuted;
+        playerDiesWallSoundeffect.mute = isMuted;
+
         pointSoundEffectt.mute = isMuted;
         changeDirectionSoundeffect.mute = isMuted;
 
