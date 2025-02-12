@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class startScreenScript : MonoBehaviour
 {
     private spawnScript spawnScript;
     private playerScript playerScript;
     public Canvas startScreen;
-    public AudioSource startGameSound;
+   
+    public GraphicRaycaster uiRaycaster;
 
     // Start is called before the first frame update
     void Start()
@@ -21,25 +23,35 @@ public class startScreenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           if(Input.GetKeyDown(KeyCode.Space)  || IsScreenTapped()){
+           if(Input.GetKeyDown(KeyCode.Space) ||  IsScreenTapped()  ){
          startScreen.gameObject.SetActive(false);
         playerScript.movespeed = 4;
         spawnScript.hasGameStarted = true;
 
            }
     }
-     private bool IsScreenTapped()
-{
-    // Check if there's at least one touch and if it began this frame
-    if (Input.touchCount > 0)
+   
+  private bool IsScreenTapped()
     {
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase == TouchPhase.Began)
+        if (Input.touchCount > 0)
         {
-            return true;
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began && !IsTouchOverUI(touch))
+            {
+                return true;
+            }
         }
+        return false;
     }
-    return false;
-}
+ private bool IsTouchOverUI(Touch touch)
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current)
+        {
+            position = touch.position
+        };
 
+        List<RaycastResult> results = new List<RaycastResult>();
+        uiRaycaster.Raycast(eventData, results);
+        return results.Count > 0;
+    }
 }

@@ -11860,7 +11860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startScreen: {fileID: 1056571295}
-  startGameSound: {fileID: 0}
+  uiRaycaster: {fileID: 1056571293}
 --- !u!1 &1540002071
 GameObject:
   m_ObjectHideFlags: 0
