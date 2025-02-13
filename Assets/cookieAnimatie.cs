@@ -19,13 +19,13 @@ public class cookieAnimatie : MonoBehaviour
     void Update()
     {
            transform.Translate(upOrDown * movespeed * Time.deltaTime);
-        if(transform.position.y >= 2.2){
+        if(transform.position.y >= 1.8){
             upOrDown = Vector3.down;
         }
          if(transform.position.y <= -2.5){
             upOrDown = Vector3.up;
         }
-         if(transform.position.y >= 1.9){
+         if(transform.position.y >= 1.5){
         tapSign.SetActive(true);
         } else {
         tapSign.SetActive(false);
