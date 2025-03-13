@@ -90,8 +90,8 @@ public class playerScript : MonoBehaviour
     } 
     void gameOver(){
         gameOverScreen.gameObject.SetActive(true);
-         gameOverScreenScript.DisplayCurrentScore();
-         gameOverScreenScript.DisplayHighScore();
+         gameOverScreenScript.Displayscores();
+         
     }
     void playParticles(){
         playerParticles.Play();

@@ -21,44 +21,38 @@ public class gameOverScreenScript : MonoBehaviour
 
         // Find the playerScore script in the scene
         playerScoreScript = FindObjectOfType<playerScore>();
+              
 
         // Display the current and high scores when the game over screen is shown
-        DisplayCurrentScore();
-        DisplayHighScore();
+        Displayscores();
+      
     }
 
-    void Update()
-    {
-        currentScoreRef = playerScoreScript.currentScore;
-    }
-
-    public void DisplayCurrentScore()
-    {
-        if (playerScoreScript != null)
+    
+    public void Displayscores(){
+          if (playerScoreScript != null)
         {
+              currentScoreRef = playerScoreScript.currentScore;
             scoreText.text = "Score: " + currentScoreRef.ToString();
         }
-    }
 
-    public void DisplayHighScore()
-    {
-        // Get the high score from PlayerPrefs, defaulting to 0 if it doesn't exist
+          
         highScore = PlayerPrefs.GetInt("highscore", 0);
 
-        // If the current score is higher than the high score, update it
+      
         if (currentScoreRef > highScore)
         {
             highScore = currentScoreRef;
             PlayerPrefs.SetInt("highscore", highScore);
-            PlayerPrefs.Save(); // Save the updated high score immediately
+            PlayerPrefs.Save(); 
         }
 
-        // Display the high score
+       
         highScoreText.text = "Highscore: " + highScore.ToString();
     }
 
     void restartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
