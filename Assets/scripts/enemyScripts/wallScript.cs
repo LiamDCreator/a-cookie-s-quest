@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class wallScript : MonoBehaviour
 {
 
-    public float movespeed;
+     [SerializeField] private float movespeed;
    
    
 

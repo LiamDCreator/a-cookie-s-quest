@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class fatPersonScript : MonoBehaviour
 { 
-     private int rand;
-     public float moveSpeed;
-    public float speed;
-    public Transform player;
-     public Sprite[] SpritePic;
+   
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float speed;
+    [SerializeField] private Sprite[] SpritePic;
+    private Transform player;
+   
 
     // Start is called before the first frame update
     void Start()
     {
-         rand = Random.Range(0,SpritePic.Length);
-        GetComponent<SpriteRenderer>().sprite = SpritePic[rand];
+       
+        GetComponent<SpriteRenderer>().sprite = SpritePic[Random.Range(0,SpritePic.Length)];
         // Automatically find the player object with the "Player" tag in the scene
-        if (player == null)
-        {
+      
             GameObject playerObject = GameObject.FindWithTag("Player");
             if (playerObject != null)
             {
                 player = playerObject.transform;
-            }
+            
         }
     }
 
