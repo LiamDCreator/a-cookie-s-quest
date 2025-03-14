@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class playerScore : MonoBehaviour
 {  
-    public Text playerScoreNow;
-    public AudioSource playerPointSound;
+    [SerializeField] private Text playerScoreNow;
+     [SerializeField] private AudioSource playerPointSound;
 
     public int currentScore = 0;
  
