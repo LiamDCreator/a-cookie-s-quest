@@ -6,21 +6,12 @@ using UnityEngine.EventSystems;
 
 public class startScreenScript : MonoBehaviour
 {
-    private spawnScript spawnScript;
-    private playerScript playerScript;
-    public Canvas startScreen;
-   
-    public GraphicRaycaster uiRaycaster;
+    [SerializeField] private spawnScript spawnScript;
+    [SerializeField] private playerScript playerScript;
+    [SerializeField] private Canvas startScreen;
+    [SerializeField] private GraphicRaycaster uiRaycaster;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        spawnScript = FindObjectOfType<spawnScript>();
-        playerScript = FindObjectOfType<playerScript>();
-
-    }
-
-    // Update is called once per frame
+ 
     void Update()
     {
            if(Input.GetKeyDown(KeyCode.Space) ||  IsScreenTapped()  ){
@@ -32,14 +23,11 @@ public class startScreenScript : MonoBehaviour
     }
    
   private bool IsScreenTapped()
-    {
+     {
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began && !IsTouchOverUI(touch))
-            {
-                return true;
-            }
+            return touch.phase == TouchPhase.Began && !IsTouchOverUI(touch);
         }
         return false;
     }
