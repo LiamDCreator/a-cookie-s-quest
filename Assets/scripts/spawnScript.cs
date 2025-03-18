@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class spawnScript : MonoBehaviour
 {
-    public GameObject wall;
-    public GameObject fatPerson;
-    public GameObject walkingPerson;
-    public float spawnRate = 1;
+    [SerializeField] private GameObject wall;
+    [SerializeField] private GameObject fatPerson;
+    [SerializeField] private GameObject walkingPerson;
+    [SerializeField] private float spawnRate = 1;
     private float timer = 3;
-    public float heightOffset = 4;
+    [SerializeField] private float heightOffset = 4;
     public bool hasGameStarted = false;
     
     void Update()
@@ -39,7 +39,6 @@ public class spawnScript : MonoBehaviour
             objectToSpawn = walkingPerson;
         }
 
-        // Instantiate the chosen object at a random y position within the height offset
         Instantiate(objectToSpawn, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
     }
 }
