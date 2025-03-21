@@ -4,58 +4,40 @@ using UnityEngine;
 
 public class cookieAnimatie : MonoBehaviour
 {
-    public float movespeed;
+    public float moveSpeed = 4f;
     public GameObject tapSign;
-    public GameObject bottonTapSign;
-    public Vector3 upOrDown = Vector3.up;
+    public GameObject bottomTapSign;
+    
+    private Vector3 moveDirection = Vector3.up;
+    private const float upperLimit = 1.8f;
+    private const float lowerLimit = -2.5f;
+    private const float tapSignThreshold = 1.5f;
+    private const float bottomTapSignThreshold = -2.2f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-           transform.Translate(upOrDown * movespeed * Time.deltaTime);
-        if(transform.position.y >= 1.8){
-            upOrDown = Vector3.down;
-        }
-         if(transform.position.y <= -2.5){
-            upOrDown = Vector3.up;
-        }
-         if(transform.position.y >= 1.5){
-        tapSign.SetActive(true);
-        } else {
-        tapSign.SetActive(false);
+        transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
 
-        }
-         if(transform.position.y <= -2.2){
-        bottonTapSign.SetActive(true);
-        } else {
-        bottonTapSign.SetActive(false);
+        if (transform.position.y >= upperLimit)
+            moveDirection = Vector3.down;
+        else if (transform.position.y <= lowerLimit)
+            moveDirection = Vector3.up;
 
-        }
-          if(Input.GetKeyDown(KeyCode.Space) || IsScreenTapped()){
-         tapSign.SetActive(false);
-        bottonTapSign.SetActive(false);
-        gameObject.SetActive(false);
+      
+        tapSign.SetActive(transform.position.y >= tapSignThreshold);
+        bottomTapSign.SetActive(transform.position.y <= bottomTapSignThreshold);
 
-    }
-
-}
- private bool IsScreenTapped()
-{
-    // Check if there's at least one touch and if it began this frame
-    if (Input.touchCount > 0)
-    {
-        Touch touch = Input.GetTouch(0);
-        if (touch.phase == TouchPhase.Began)
+   
+        if (Input.GetKeyDown(KeyCode.Space) || IsScreenTapped())
         {
-            return true;
+            tapSign.SetActive(false);
+            bottomTapSign.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
-    return false;
-}
+
+    private bool IsScreenTapped()
+    {
+        return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
+    }
 }

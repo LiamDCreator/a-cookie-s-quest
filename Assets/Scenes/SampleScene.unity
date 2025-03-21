@@ -11808,6 +11808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5af1b23796b764cafa12284382d7a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnScript: {fileID: 1729445404}
+  playerScript: {fileID: 938700880}
   startScreen: {fileID: 1056571295}
   uiRaycaster: {fileID: 1056571293}
 --- !u!1 &1540002071
