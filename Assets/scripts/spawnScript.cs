@@ -8,10 +8,15 @@ public class spawnScript : MonoBehaviour
     [SerializeField] private GameObject fatPerson;
     [SerializeField] private GameObject walkingPerson;
     [SerializeField] private float spawnRate = 1;
-    private float timer = 3;
     [SerializeField] private float heightOffset = 4;
-    public bool hasGameStarted = false;
+    private float timer = 3;
     
+    public bool hasGameStarted = false;
+     private GameObject[] spawnableObjects;
+    
+    private void Start(){
+   spawnableObjects = new GameObject[] { wall, wall, wall, wall, fatPerson, fatPerson, walkingPerson, walkingPerson, walkingPerson };
+    }
     void Update()
     {if(hasGameStarted == true){
         if(timer < spawnRate){
@@ -28,17 +33,8 @@ public class spawnScript : MonoBehaviour
         float highestPoint = transform.position.y + heightOffset;
 
        
-        int randomIndex = Random.Range(0, 11); 
-        GameObject objectToSpawn;
+      
 
-        if (randomIndex <= 5) {
-            objectToSpawn = wall;
-        } else if (randomIndex == 6 ||randomIndex == 7) {
-            objectToSpawn = fatPerson;
-        } else {
-            objectToSpawn = walkingPerson;
-        }
-
-        Instantiate(objectToSpawn, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
+        Instantiate(spawnableObjects[Random.Range(0, spawnableObjects.Length)], new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
     }
 }
