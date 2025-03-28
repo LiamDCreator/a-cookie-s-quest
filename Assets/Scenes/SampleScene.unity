@@ -6045,10 +6045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a7b7e6c0b2ca14c961ed05b709a20b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 4
+  moveSpeed: 4
   tapSign: {fileID: 1063385205}
-  bottonTapSign: {fileID: 165949757}
-  upOrDown: {x: 0, y: 1, z: 0}
+  bottomTapSign: {fileID: 165949757}
 --- !u!1 &938700879
 GameObject:
   m_ObjectHideFlags: 0
