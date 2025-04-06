@@ -265,11 +265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 786bd55227e1e0041a3dee2291a419ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDiesSoundeffect: {fileID: 111426265}
-  playerDiesWallSoundeffect: {fileID: 111426268}
-  playerDiesWaterSoundeffect: {fileID: 111426269}
-  pointSoundEffectt: {fileID: 938700886}
-  changeDirectionSoundeffect: {fileID: 938700887}
+  soundEffects:
+  - {fileID: 111426268}
+  - {fileID: 111426269}
+  - {fileID: 938700886}
+  - {fileID: 938700887}
+  - {fileID: 111426265}
   muteSprite: {fileID: -735405796, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
   unmuteSprite: {fileID: 1039369663, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
   buttonImage: {fileID: 1593371068}

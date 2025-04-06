@@ -16,7 +16,7 @@ public class startScreenScript : MonoBehaviour
     {
            if(Input.GetKeyDown(KeyCode.Space) ||  IsScreenTapped()  ){
          startScreen.gameObject.SetActive(false);
-        playerScript.movespeed = 4;
+        playerScript.moveSpeed = 4;
         spawnScript.hasGameStarted = true;
 
            }
