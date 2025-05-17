@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6084,14 +6084,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f64038518a04814883d7cce680600e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0
+  moveSpeed: 0
   playerDiesSound: {fileID: 111426265}
   playerDiesWallSound: {fileID: 111426268}
   playerDiesWaterSound: {fileID: 111426269}
   changeDirectionSound: {fileID: 938700887}
   gameOverScreenScript: {fileID: 1515508643}
   gameOverScreen: {fileID: 560286294}
-  upOrDown: {x: 0, y: 1, z: 0}
   playerParticles: {fileID: 1213879179}
   particle: {fileID: 1213879180}
 --- !u!212 &938700881
@@ -11927,8 +11926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 46, y: 33}
-  m_SizeDelta: {x: 38.513, y: 26.7258}
+  m_AnchoredPosition: {x: 62.5305, y: 44.8075}
+  m_SizeDelta: {x: 55.0435, y: 38.5333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593371067
 MonoBehaviour:

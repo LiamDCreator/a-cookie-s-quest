@@ -101,8 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  speed: 3
-  player: {fileID: 0}
+  speed: 2.8
   SpritePic:
   - {fileID: -83017577, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
   - {fileID: 563034412, guid: 090ff6a8e7b951b46b871df3a41cf196, type: 3}
@@ -143,7 +142,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1400001, y: 2.34}
+    oldSize: {x: 1.1800001, y: 2.38}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -215,7 +214,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1400001, y: 2.34}
+    oldSize: {x: 1.1800001, y: 2.38}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
